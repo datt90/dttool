@@ -1,7 +1,7 @@
 
 from typing import Any
-from dttool.file_converter.converter import Converter
-from dttool.constants import Config
+from hgf.file_converter.converter import Converter
+from hgf.constants import Config
 
 def convert_file(args: dict[str, Any]) -> None:
     """

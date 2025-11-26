@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from starlette.responses import JSONResponse 
 
-from dttool.constants import Config
+from hgf.constants import Config
 
 class FTJSONResponse(JSONResponse):
   media_type = "application/json"
@@ -47,8 +47,8 @@ class ApiServer:
     ApiServer.__initialized = True
 
     self.app = FastAPI(
-      title="Dttool API",
-      description="API for dttool",
+      title="Hgf API",
+      description="API for hgf",
       version="0.1.0",
       default_response_class=FTJSONResponse,
     )
@@ -88,7 +88,7 @@ class ApiServer:
     :param app: The FastAPI application instance.
     :param config: The configuration to apply.
     """
-    from dttool.rpc.api_server.api_v1 import router_public as api_v1_public
+    from hgf.rpc.api_server.api_v1 import router_public as api_v1_public
 
     app.include_router(api_v1_public, prefix="/api/v1")
 

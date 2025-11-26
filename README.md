@@ -3,7 +3,7 @@
 You will run flotool in separated `virtual environment`
 
 ```bash
-# create virtualenv in directory /dttool/.venv
+# create virtualenv in directory /hgtool/.venv
 python3 -m venv .venv
 
 # run virtualenv
@@ -25,5 +25,5 @@ python3 -m pip install -e .
 
 To start the API server, simply run the following command:
 ```bash
-dttool webserver
+hgf webserver
 ```

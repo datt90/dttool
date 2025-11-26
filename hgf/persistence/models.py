@@ -8,7 +8,7 @@ from sqlalchemy.exc import NoSuchModuleError
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from dttool.exceptions import OperationalException
+from hgf.exceptions import OperationalException
 
 logger = logging.getLogger(__name__)
 

@@ -7,7 +7,7 @@ def start_webserver(args: dict[str, Any]) -> None:
     :param args: The arguments passed to the command.
     :return: The return code of the command.
     """
-    from dttool.rpc.api_server.webserver import ApiServer
+    from hgf.rpc.api_server.webserver import ApiServer
 
     # Initialize the web server
     config = {            

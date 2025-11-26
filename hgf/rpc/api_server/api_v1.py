@@ -1,8 +1,8 @@
 import logging
 from fastapi import APIRouter, Depends, Query
 
-from dttool import __version__
-from dttool.rpc.api_server.api_schemas import (
+from hgf import __version__
+from hgf.rpc.api_server.api_schemas import (
   Ping,
   Version,
 )

@@ -1,10 +1,10 @@
-class DttoolException(Exception):
+class HgfException(Exception):
   """
   All other exception types are subclasses of this exception type.
   """
 
 
-class OperationalException(DttoolException):
+class OperationalException(HgfException):
   """
   Most of the time, this is caused by an invalid Configuration.
   """

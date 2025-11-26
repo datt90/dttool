@@ -1,4 +1,4 @@
-# Dttool rules
+# Hgf rules
 config*.json
 *.sqlite
 *.sqlite-shm

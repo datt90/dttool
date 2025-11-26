@@ -1,4 +1,4 @@
-from dttool import __version__
+from hgf import __version__
 
 class Arg:
   # Optional CLI arguments

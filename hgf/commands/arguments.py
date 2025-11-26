@@ -3,8 +3,8 @@ from functools import partial
 from pathlib import Path
 from typing import Any, Optional, Union
 
-from dttool.commands.cli_options import AVAILABLE_CLI_OPTIONS
-from dttool.constants import DEFAULT_CONFIG
+from hgf.commands.cli_options import AVAILABLE_CLI_OPTIONS
+from hgf.constants import DEFAULT_CONFIG
 
 ARGS_COMMON = [
     "logfile", 
@@ -64,12 +64,12 @@ class Arguments:
 
         # Build main command
         self.parser = ArgumentParser(
-        prog="dttool", description="A toolkit for developers.",
+        prog="hgf", description="A toolkit for developers.",
         )
 
         self._build_args(optionlist=["version_main"], parser=self.parser)
 
-        from dttool.commands import (
+        from hgf.commands import (
         start_webserver,
         convert_file,
         )
