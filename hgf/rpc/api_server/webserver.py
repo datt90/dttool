@@ -91,8 +91,10 @@ class ApiServer:
     :param config: The configuration to apply.
     """
     from hgf.rpc.api_server.api_v1 import router_public as api_v1_public
+    from hgf.rpc.api_server.api_auth import router_auth
 
     app.include_router(api_v1_public, prefix="/api/v1")
+    app.include_router(router_auth, prefix="/api/v1", tags=["auth"])
 
     app.add_middleware(
       CORSMiddleware,

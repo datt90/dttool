@@ -5,3 +5,13 @@ class Ping(BaseModel):
 
 class Version(BaseModel):
   version: str
+
+class AccessToken(BaseModel):
+    access_token: str
+
+class AccessAndRefreshToken(AccessToken):
+    refresh_token: str
+
+class SignupRequest(BaseModel):
+    username: str
+    password: str

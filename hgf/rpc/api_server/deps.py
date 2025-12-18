@@ -8,4 +8,7 @@ from hgf.constants import Config
 from hgf.rpc.api_server.webserver import ApiServer
 
 def get_config() -> dict[str, Any]:
-  return ApiServer._config
+    return ApiServer._config
+
+def get_api_config() -> dict[str, Any]:
+    return ApiServer._config["api_server"]
